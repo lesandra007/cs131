@@ -1,0 +1,144 @@
+    1  passwd
+    2  ping 172.20.25.9
+    3  wget www.github.com
+    4  pwd
+    5  wget www.github.com
+    6  pwd
+    7  cd class
+    8  ls
+    9  nano spotify-2023.csv 
+   10  vi spotify-2023.csv 
+   11  ls
+   12  ls
+   13  mkdir class
+   14  cd class
+   15  pwd
+   16  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+   17  man tail
+   18  ls
+   19  nano spotify-2023.csv 
+   20  ls
+   21  cd class
+   22  ls
+   23  wget http://github.com/khanchandaniashish/CS131/blob/main/spotify-2023.csv
+   24  grep 'Taylor Swift' spotify-2023.csv > linesWithTaylor.txt
+   25  grep 'Drake' spotify-2023.csv >> linesWithTaylor.txt
+   26  cat linesWithTaylor.txt
+   27  wc -l linesWithTaylor.txt
+   28  cd ~/.ssh && ssh-keygen
+   29  cat id_rsa.pub
+   30  mkdir ~/.ssh
+   31  cd ~/.ssh && ssh-keygen
+   32  cat id_rsa.pub
+   33  cd..
+   34  cd ..
+   35  pwd
+   36  ls
+   37  wget www.github.com
+   38  mkdir gitTutorial
+   39  cd gitTutorial/
+   40  git init
+   41  touch newfile.txt
+   42  ls
+   43  git status
+   44  git add newfile.txt 
+   45  git status
+   46  git commit -m "intial commit"
+   47  cd ..
+   48  git config --global user.email "lesandra007@gmail.com"
+   49  git config --global user.name "SandraLe"
+   50  ls
+   51  cd gitTutorial/
+   52  git status
+   53  git commit -m "intial commit"
+   54   git checkout -b my-new-branch
+   55  git branch
+   56  git remote add origin https://github.com/lesandra007/gitTutorial.git
+   57  git push -u origin master
+   58  git push --set-upstream origin master
+   59  git remote add origin git@github.com:lesandra007/gitTutorial.git
+   60  git remote remove origin
+   61  git remote add origin git@github.com:lesandra007/gitTutorial.git
+   62  git status
+   63  git push -u origin master
+   64  git push origin my-new-branch
+   65   git checkout -b master
+   66  git branch
+   67  git checkout master
+   68  git branch
+   69  git pull
+   70  cd ..
+   71  ls
+   72  git rm index.html
+   73  rm index.html
+   74  rm index.html.1
+   75  rm index.html.2
+   76  ls
+   77  mv -R class/ inclass
+   78  mv class/inclass
+   79  rename -v 's/class/inclass/' *
+   80  ls
+   81  mv class inclass
+   82  ls
+   83  cd inclas
+   84  cd inclass/
+   85  ls 
+   86  rm spotify-2023.csv.1
+   87  ls
+   88  cd ..
+   89  ls
+   90  mkdir cs131
+   91  pwd
+   92  cd cs131/
+   93  pwd
+   94  cd ..
+   95  wget www.github.com
+   96  ls
+   97  cd cs131/
+   98  ls
+   99  cd ..
+  100  ls
+  101  rm index.html
+  102  ls
+  103  cs131/
+  104  cd cs131/
+  105  git init
+  106  ls
+  107  cd ..
+  108  ls
+  109  wget www.github.com
+  110  ls
+  111  cd cs131/
+  112  ls
+  113  mkdir Worksheet1
+  114  ls
+  115  cd Worksheet1/
+  116  history > cmds.log
+  117  cat cmds.log
+  118  git status
+  119  cd ..
+  120  git remote add origin git@github.com:lesandra007/cs131.git
+  121  git status
+  122  git add Worksheet1/
+  123  git commit -m "initial commit"
+  124  git status
+  125  git push --set-upstream origin master
+  126  pwd
+  127  ls
+  128  cd cs131/
+  129  ls
+  130  mkdir Worksheet2
+  131  cd Worksheet2
+  132  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  133  ls
+  134  grep 'United States' 'Global Youtube Statistics.csv'
+  135  grep 'United States' 'Global YouTube Statistics.csv'
+  136     
+  137  grep 'Music' 'Global YouTube Statistics.csv' > linesWithMusic.txt
+  138  cat linesWithMusic.txt 
+  139  wc -l linesWithMusic.txt > counts.txt
+  140  wc -w linesWithMusic.txt >> counts.txt
+  141  cat counts.txt
+  142  vi counts.txt
+  143  cat counts.txt
+  144  history > cmds.log
