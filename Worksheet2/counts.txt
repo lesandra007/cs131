@@ -1,2 +1,0 @@
-238 linesWithMusic.txt #line count of records in "Music" category
-830 linesWithMusic.txt #word count of records in "Music" category
