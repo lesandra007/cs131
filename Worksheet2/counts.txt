@@ -1,2 +1,1 @@
-238 linesWithMusic.txt #line count of records in "Music" category
-830 linesWithMusic.txt #word count of records in "Music" category
+  196 lines and 654 words counted from the records in "Music category" listed in MusicCategoryYoutubers.txt

@@ -142,3 +142,38 @@
   142  vi counts.txt
   143  cat counts.txt
   144  history > cmds.log
+  145  cat cmds.log
+  146  git status
+  147  cd ..
+  148  git status
+  149  cd Worksheet
+  150  cd Worksheet2
+  151  ls
+  152  cd ..
+  153  git status
+  154  git add Worksheet2/
+  155  git -m commit "initial commit for Worksheet2"
+  156  git commit -m "initial commit for Worksheet2"
+  157  git push
+  158  ls
+  159  cd cs131/
+  160  cd Worksheet2
+  161  ls
+  162  rm 'Global YouTube Statistics.csv' 
+  163  rm linesWithMusic.txt 
+  164  rm counts.txt 
+  165  rm cmds.log 
+  166  ls
+  167  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  168  head 'Global YouTube Statistics.csv' 
+  169  grep '^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,United States,*' 'Global YouTube Statistics.csv' > YoutubersFromUnitedStates.txt
+  170  cat YoutubersFromUnitedStates.txt 
+  171  head YoutubersFromUnitedStates.txt 
+  172  head 'Global YouTube Statistics.csv' 
+  173  grep '^[^,]*,[^,]*,[^,]*,[^,]*,Music,*' 'Global YouTube Statistics.csv' > MusicCategoryYoutubers.txt
+  174  head MusicCategoryYoutubers.txt 
+  175  wc -lw MusicCategoryYoutubers.txt > counts.txt
+  176  cat counts.txt 
+  177  vi counts.txt 
+  178  cat counts.txt 
+  179  history > cmds.log
