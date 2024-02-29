@@ -1,0 +1,43 @@
+Question 1:
+cd cs131/
+mkdir Assignment1
+cd Assignment1/
+
+Question 2:
+/bin/bash			//the current Shell
+echo $SHELL >> Assignment1.txt	//command used
+
+Question 2:
+/mnt/scratch/FA23_CS131_Ashish/sandrasp24	//home directory path
+echo $HOME >> Assignment1.txt			//command used
+
+Question 3:
+1194				//my UID
+S77				//group I belong to
+grep sandrasp24 /etc/passwd	//command to find UID
+grep sandrasp24 /etc/group	//command to find group I belong to
+
+Question 4:
+Yes, I can cd in the "myDir" directory.
+Yes, I can "ls" it.
+Yes, I can "ls -l" it.
+No, I cannot create file under it.
+
+Question 5:
+mkdir myDir2	//cmd used to create new directory "myDir2"
+mkdir myDir3	//cmd used to create new directory "myDir3"
+
+Question 6:
+cd myDir2/	 	//cmd to change into "myDir2" directory
+touch myFile.txt	//cmd to create new file "myFile.txt"
+mv myFile.txt /mnt/scratch/FA23_CS131_Ashish/sandrasp24/cs131/Assignment1/myDir3/myFile.txt	//cmd to move "myFile.txt" to "myDir2" to "myDir3"
+
+Question 6:
+71367 mebibytes of total RAM/Memory in the IBM VM
+
+Question 9:
+8.6 (Ootpa)		//operating system version
+/etc/os-release		//file containing os version information
+
+Question 10:
+read, write, and execute permissions are given to all users for file /etc/os-release
