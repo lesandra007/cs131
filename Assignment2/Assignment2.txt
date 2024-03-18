@@ -1,0 +1,78 @@
+Task 1:
+a) We are finding all the regular files in the /etc directory and its subdirectories and listing their path names in file one.txt.
+   Any errors that occur while exeuting this command are printed to file two.txt.
+b) one.txt contains a list of file path names that begin with '/etc/'.
+   two.txt contains a list of error messages that describe the unsuccessful command, the file the error occured on, and the reason for error.
+
+Task 2:
+Output of command used:
+
+     15 2006,Mar
+     13 2014,Jul
+     12 2014,Aug
+
+As per the Dataset, Top 3 [Month, Year] with the most number of Youtube channels created were:
+1. March, 2006 with 15 channels
+2. July, 2014 with 13 channels
+3. August, 2014 with 12 channels
+
+The command used to find it was this: cut -d ',' -f 20-21 'Global YouTube Statistics.csv' | sort | uniq -c | sort -nr | head -n 3 >> Assignment2.txt
+
+This command displays the top 3 [Number_of_Youtube_Channels_Created Year, Month] from the 'Global Youtube Statistics.csv' file from greatest to least Number_of_Youtube_Channels_Created.
+
+Parameters:
+The cut command extracts the 20th (created year) and 21st (created month) columns from the Global YouTube Statistics.csv file.
+The first sort command sorts the dates [Year,Month] outputted from the previous cut command from least to most recent.
+The uniq command prefixes each line outputted from the previous sort command with the number of occurrences and removes duplicate lines.
+The second sort command sorts the lines outputted from the previous uniq command by the number of occurrences from most to least frequent. 
+The head command displays the first 3 lines outputted from the previous sort command, which contain the top 3 [Year, Month] with the most number of YouTube channels.
+
+Task 3:
+Command used: ps -x
+Output:
+ 
+    PID TTY      STAT   TIME COMMAND
+2884475 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+2884477 ?        S      0:00 (sd-pam)
+2884485 ?        S      0:00 sshd: sandrasp24@pts/10
+2884486 pts/10   Ss     0:00 -bash
+2890477 pts/10   R+     0:00 ps -x
+
+Task 4:
+a) vi file.txt 
+b) Output of 'ps -x' after executing 'vi file.txt' on first terminal:
+
+    PID TTY      STAT   TIME COMMAND
+2884475 ?        Ss     0:01 /usr/lib/systemd/systemd --user
+2884477 ?        S      0:00 (sd-pam)
+2884485 ?        S      0:00 sshd: sandrasp24@pts/10
+2884486 pts/10   Ss     0:00 -bash
+2891248 ?        S      0:00 sshd: sandrasp24@pts/28
+2891250 pts/28   Ss     0:00 -bash
+2891561 pts/10   S+     0:00 vim file.txt
+2891852 pts/28   R+     0:00 ps -x
+
+The sshd and bash processes for both terminals are listed as running processes, as well as the vim process executed by the 'vi file.txt' command that is executed on the first terminal. The Process ID for the vim is 2891561.
+c) q!
+d) Output of 'ps -x' after quitting vi:
+ 
+    PID TTY      STAT   TIME COMMAND
+2884475 ?        Ss     0:01 /usr/lib/systemd/systemd --user
+2884477 ?        S      0:00 (sd-pam)
+2884485 ?        S      0:00 sshd: sandrasp24@pts/10
+2884486 pts/10   Ss+    0:00 -bash
+2891248 ?        S      0:00 sshd: sandrasp24@pts/28
+2891250 pts/28   Ss     0:00 -bash
+2893825 pts/28   R+     0:00 ps -x
+
+The vim process is no longer listed as a running process because the process was terminated by the q! option. The sshd and bash processes of both terminals are still listed as running because they are both still open.
+
+Task 5:
+The init process is the first process to run. It is invoked by the kernal at startup and executes one /etc/getty per terminal or one sshd per remote ssh connection.
+
+Process ID for the init process is 1.
+
+Command to find the process id for the init process: ps aux | grep systemd
+
+Task 6:
+The 'ps aux' command displays the information of all running processes of all users, including those that are not associated with a terminal, in user-oriented format. The information includes content such as user, Process ID, percentage of CPU usage, percentage of memory usage, state of the process, the associated command or process name, etc.

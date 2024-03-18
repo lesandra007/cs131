@@ -1,0 +1,326 @@
+    1  passwd
+    2  ping 172.20.25.9
+    3  wget www.github.com
+    4  pwd
+    5  wget www.github.com
+    6  pwd
+    7  cd class
+    8  ls
+    9  nano spotify-2023.csv 
+   10  vi spotify-2023.csv 
+   11  ls
+   12  ls
+   13  mkdir class
+   14  cd class
+   15  pwd
+   16  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/spotify-2023.csv
+   17  man tail
+   18  ls
+   19  nano spotify-2023.csv 
+   20  ls
+   21  cd class
+   22  ls
+   23  wget http://github.com/khanchandaniashish/CS131/blob/main/spotify-2023.csv
+   24  grep 'Taylor Swift' spotify-2023.csv > linesWithTaylor.txt
+   25  grep 'Drake' spotify-2023.csv >> linesWithTaylor.txt
+   26  cat linesWithTaylor.txt
+   27  wc -l linesWithTaylor.txt
+   28  cd ~/.ssh && ssh-keygen
+   29  cat id_rsa.pub
+   30  mkdir ~/.ssh
+   31  cd ~/.ssh && ssh-keygen
+   32  cat id_rsa.pub
+   33  cd..
+   34  cd ..
+   35  pwd
+   36  ls
+   37  wget www.github.com
+   38  mkdir gitTutorial
+   39  cd gitTutorial/
+   40  git init
+   41  touch newfile.txt
+   42  ls
+   43  git status
+   44  git add newfile.txt 
+   45  git status
+   46  git commit -m "intial commit"
+   47  cd ..
+   48  git config --global user.email "lesandra007@gmail.com"
+   49  git config --global user.name "SandraLe"
+   50  ls
+   51  cd gitTutorial/
+   52  git status
+   53  git commit -m "intial commit"
+   54   git checkout -b my-new-branch
+   55  git branch
+   56  git remote add origin https://github.com/lesandra007/gitTutorial.git
+   57  git push -u origin master
+   58  git push --set-upstream origin master
+   59  git remote add origin git@github.com:lesandra007/gitTutorial.git
+   60  git remote remove origin
+   61  git remote add origin git@github.com:lesandra007/gitTutorial.git
+   62  git status
+   63  git push -u origin master
+   64  git push origin my-new-branch
+   65   git checkout -b master
+   66  git branch
+   67  git checkout master
+   68  git branch
+   69  git pull
+   70  cd ..
+   71  ls
+   72  git rm index.html
+   73  rm index.html
+   74  rm index.html.1
+   75  rm index.html.2
+   76  ls
+   77  mv -R class/ inclass
+   78  mv class/inclass
+   79  rename -v 's/class/inclass/' *
+   80  ls
+   81  mv class inclass
+   82  ls
+   83  cd inclas
+   84  cd inclass/
+   85  ls 
+   86  rm spotify-2023.csv.1
+   87  ls
+   88  cd ..
+   89  ls
+   90  mkdir cs131
+   91  pwd
+   92  cd cs131/
+   93  pwd
+   94  cd ..
+   95  wget www.github.com
+   96  ls
+   97  cd cs131/
+   98  ls
+   99  cd ..
+  100  ls
+  101  rm index.html
+  102  ls
+  103  cs131/
+  104  cd cs131/
+  105  git init
+  106  ls
+  107  cd ..
+  108  ls
+  109  wget www.github.com
+  110  ls
+  111  cd cs131/
+  112  ls
+  113  mkdir Worksheet1
+  114  ls
+  115  cd Worksheet1/
+  116  history > cmds.log
+  117  cat cmds.log
+  118  git status
+  119  cd ..
+  120  git remote add origin git@github.com:lesandra007/cs131.git
+  121  git status
+  122  git add Worksheet1/
+  123  git commit -m "initial commit"
+  124  git status
+  125  git push --set-upstream origin master
+  126  pwd
+  127  ls
+  128  cd cs131/
+  129  ls
+  130  mkdir Worksheet2
+  131  cd Worksheet2
+  132  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  133  ls
+  134  grep 'United States' 'Global Youtube Statistics.csv'
+  135  grep 'United States' 'Global YouTube Statistics.csv'
+  136     
+  137  grep 'Music' 'Global YouTube Statistics.csv' > linesWithMusic.txt
+  138  cat linesWithMusic.txt 
+  139  wc -l linesWithMusic.txt > counts.txt
+  140  wc -w linesWithMusic.txt >> counts.txt
+  141  cat counts.txt
+  142  vi counts.txt
+  143  cat counts.txt
+  144  history > cmds.log
+  145  cat cmds.log
+  146  git status
+  147  cd ..
+  148  git status
+  149  cd Worksheet
+  150  cd Worksheet2
+  151  ls
+  152  cd ..
+  153  git status
+  154  git add Worksheet2/
+  155  git -m commit "initial commit for Worksheet2"
+  156  git commit -m "initial commit for Worksheet2"
+  157  git push
+  158  ls
+  159  cd cs131/
+  160  cd Worksheet2
+  161  ls
+  162  rm 'Global YouTube Statistics.csv' 
+  163  rm linesWithMusic.txt 
+  164  rm counts.txt 
+  165  rm cmds.log 
+  166  ls
+  167  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  168  head 'Global YouTube Statistics.csv' 
+  169  grep '^[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,United States,*' 'Global YouTube Statistics.csv' > YoutubersFromUnitedStates.txt
+  170  cat YoutubersFromUnitedStates.txt 
+  171  head YoutubersFromUnitedStates.txt 
+  172  head 'Global YouTube Statistics.csv' 
+  173  grep '^[^,]*,[^,]*,[^,]*,[^,]*,Music,*' 'Global YouTube Statistics.csv' > MusicCategoryYoutubers.txt
+  174  head MusicCategoryYoutubers.txt 
+  175  wc -lw MusicCategoryYoutubers.txt > counts.txt
+  176  cat counts.txt 
+  177  vi counts.txt 
+  178  cat counts.txt 
+  179  history > cmds.log
+  180  tail cmds.log 
+  181  cat cmds.log 
+  182  git status
+  183  cd ..
+  184  git status
+  185  git add Worksheet2/cmds.log 
+  186  git add Worksheet2/counts.txt 
+  187  git commit -m "counts for category Music"
+  188  git status
+  189  git push
+  190  git pull
+  191  cd Worksheet2
+  192  ls
+  193  cat counts.txt 
+  194  cat cmds.log 
+  195  git status
+  196  git push
+  197  git pull
+  198  git status
+  199  git add cmds.log 
+  200  git add counts.txt 
+  201  git commit -m "counts for Music Category"
+  202  git push
+  203  git status
+  204  cd ..
+  205  git status
+  206  cd cs131/
+  207  ls
+  208  mkdir Assignment1
+  209  cd Assignment1/
+  210  vi Assignment1.txt
+  211  echo $SHELL >> Assignment1.txt 
+  212  vi Assignment1.txt 
+  213  echo $HOME >> Assignment1.txt 
+  214  vi Assignment1.txt 
+  215  grep sandrasp24 /etc/passwd
+  216  grep sandrasp24 /etc/group
+  217  vi Assignment1.txt 
+  218  mkdir myDir
+  219  ls -l
+  220  chmod u-w myDir/
+  221  ls
+  222  ls -l
+  223  cd myDir/
+  224  ls
+  225  ls -l
+  226  touch newFile.txt
+  227  cd ..
+  228  vi Assignment1.txt 
+  229  mkdir myDir2
+  230  mkdir myDir3
+  231  cd myDir2/
+  232  touch myFile.txt
+  233  pwd
+  234  mv myFile.txt /mnt/scratch/FA23_CS131_Ashish/sandrasp24/cs131/Assignment1/myDir3/myFile.txt
+  235  ls
+  236  cd ..
+  237  cd myDir3/
+  238  ls
+  239  man free
+  240  free -m
+  241  cd ..
+  242  free -m
+  243  echo "71367 mebibytes of total RAM/Memory in the IBM VM" >> Assignment1.txt 
+  244  vi Assignment1.txt 
+  245  cat /etc/os-release
+  246  echo "8.6 (Ootpa)" >> Assignment1.txt 
+  247  vi Assignment1.txt 
+  248  ls -l etc/os-release
+  249  ls -l /etc/os-release
+  250  vi Assignment1.txt
+  251  history > cmds.log
+  252  ls
+  253  vi cmds.log 
+  254  cd cs131/
+  255  cd Assignment1/
+  256  ls
+  257  vi Assignment1.txt 
+  258  vi cmds.log
+  259  git status
+  260  git add Assignment1.txt
+  261  git add cmds.log 
+  262  git commit -m "initial commit for Assignment 1"
+  263  git push
+  264  dig +norecurse @a.root-servers.net any www.sjsu.edu
+  265  dig +norecurse @b.edu-servers.net any www.sjsu.edu
+  266  dig +norecurse @adns1.ucsc.edu any www.sjsu.edu
+  267  dig +norecurse @a.root-servers.net any www.google.com
+  268  dig +norecurse @e.gtld-servers.net any www.google.com
+  269  dig +norecurse @ns2.google.com any www.google.com
+  270  ls
+  271  cd cs131/
+  272  cd Worksheet1
+  273  ls
+  274  head -n 5 cmds.log
+  275  head -5 cmds.log
+  276  tail -n 5 cmds.log
+  277  tail -5 cmds.log
+  278  cd inclass/
+  279  ls
+  280  nano linesWithTaylor.txt 
+  281  cd Des
+  282  ls
+  283  cd cs131/
+  284  ls
+----------------------------------ASSIGNMENT 2-----------------------------------
+Set up:
+  285  mkdir Assignment2
+  286  cd Assignment
+  287  cd Assignment2
+  288  touch Assignment2.txt
+
+Task 1:
+  289  find /etc -type f > one.txt 2> two.txt
+  290  cat one.txt
+  291  cat two.txt
+  292  vi Assignment2.txt 
+
+Task 2:
+  297  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  298  cut -d ',' -f 20-21 'Global YouTube Statistics.csv' | sort | uniq -c | sort -nr | head -n 3 >> Assignment2.txt 
+  299  vi Assignment2.txt
+
+Task 3: 
+  300  ps -x >> Assignment2.txt 
+  301  vi Assignment2.txt 
+
+Task 4:
+#First Terminal
+  302  vi file.txt
+#Second Terminal
+	cd cs131/
+	cd Assignment2/
+	ps -x >> Assignment2.txt
+	vi Assignment2.txt
+	ps -x >> Assignment2.txt
+	vi Assignment2.txt
+
+Task 5:
+  303  ps aux | grep systemd
+  304  vi Assignment2.txt
+
+Task 6: 
+  305  ps aux
+  306  vi Assignment2.txt 
+  307    
+  308  history > cmds.log
