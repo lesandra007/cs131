@@ -301,18 +301,23 @@ Task 2:
   299  vi Assignment2.txt
 
 Task 3: 
-  300  ps -x >> Assignment2.txt 
+  300  ps -u sandrasp24 >> Assignment2.txt 
   301  vi Assignment2.txt 
 
-Task 4:
+Task 4a:
 #First Terminal
   302  vi file.txt
+
+Task 4b:
 #Second Terminal
 	cd cs131/
 	cd Assignment2/
-	ps -x >> Assignment2.txt
+	ps -u sandrasp24 >> Assignment2.txt
 	vi Assignment2.txt
-	ps -x >> Assignment2.txt
+
+Task 4d:
+#Second Terminal
+	ps -u sandrasp24 >> Assignment2.txt
 	vi Assignment2.txt
 
 Task 5:

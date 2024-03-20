@@ -1,6 +1,6 @@
 Task 1:
-a) We are finding all the regular files in the /etc directory and its subdirectories and listing their path names in file one.txt.
-   Any errors that occur while exeuting this command are printed to file two.txt.
+a) We are finding all the regular files in the etc directory and its subdirectories and listing their path names in file one.txt.
+   Any errors that occur while executing this command are printed to file two.txt.
 b) one.txt contains a list of file path names that begin with '/etc/'.
    two.txt contains a list of error messages that describe the unsuccessful command, the file the error occured on, and the reason for error.
 
@@ -28,47 +28,47 @@ The second sort command sorts the lines outputted from the previous uniq command
 The head command displays the first 3 lines outputted from the previous sort command, which contain the top 3 [Year, Month] with the most number of YouTube channels.
 
 Task 3:
-Command used: ps -x
+Command used: ps -u sandrasp24
 Output:
  
-    PID TTY      STAT   TIME COMMAND
-2884475 ?        Ss     0:00 /usr/lib/systemd/systemd --user
-2884477 ?        S      0:00 (sd-pam)
-2884485 ?        S      0:00 sshd: sandrasp24@pts/10
-2884486 pts/10   Ss     0:00 -bash
-2890477 pts/10   R+     0:00 ps -x
+    PID TTY          TIME CMD
+3563974 ?        00:00:00 systemd
+3563976 ?        00:00:00 (sd-pam)
+3563984 ?        00:00:00 sshd
+3563985 pts/34   00:00:00 bash
+3566345 pts/34   00:00:00 ps
 
 Task 4:
 a) vi file.txt 
-b) Output of 'ps -x' after executing 'vi file.txt' on first terminal:
+b) Output of 'ps -u sandrasp24' after executing 'vi file.txt' on first terminal:
 
-    PID TTY      STAT   TIME COMMAND
-2884475 ?        Ss     0:01 /usr/lib/systemd/systemd --user
-2884477 ?        S      0:00 (sd-pam)
-2884485 ?        S      0:00 sshd: sandrasp24@pts/10
-2884486 pts/10   Ss     0:00 -bash
-2891248 ?        S      0:00 sshd: sandrasp24@pts/28
-2891250 pts/28   Ss     0:00 -bash
-2891561 pts/10   S+     0:00 vim file.txt
-2891852 pts/28   R+     0:00 ps -x
+    PID TTY          TIME CMD
+3563974 ?        00:00:00 systemd
+3563976 ?        00:00:00 (sd-pam)
+3563984 ?        00:00:00 sshd
+3563985 pts/34   00:00:00 bash
+3569870 ?        00:00:00 sshd
+3569871 pts/48   00:00:00 bash
+3570152 pts/34   00:00:00 vim
+3570395 pts/48   00:00:00 ps
 
-The sshd and bash processes for both terminals are listed as running processes, as well as the vim process executed by the 'vi file.txt' command that is executed on the first terminal. The Process ID for the vim is 2891561.
+The sshd and bash processes for both terminals are listed as running processes, as well as the vim process executed by the 'vi file.txt' command that is executed on the first terminal. The Process ID for the vim is 3570152.
 c) q!
-d) Output of 'ps -x' after quitting vi:
+d) Output of 'ps -u sandrasp24' after quitting vi:
  
-    PID TTY      STAT   TIME COMMAND
-2884475 ?        Ss     0:01 /usr/lib/systemd/systemd --user
-2884477 ?        S      0:00 (sd-pam)
-2884485 ?        S      0:00 sshd: sandrasp24@pts/10
-2884486 pts/10   Ss+    0:00 -bash
-2891248 ?        S      0:00 sshd: sandrasp24@pts/28
-2891250 pts/28   Ss     0:00 -bash
-2893825 pts/28   R+     0:00 ps -x
+    PID TTY          TIME CMD
+3563974 ?        00:00:01 systemd
+3563976 ?        00:00:00 (sd-pam)
+3563984 ?        00:00:00 sshd
+3563985 pts/34   00:00:00 bash
+3569870 ?        00:00:00 sshd
+3569871 pts/48   00:00:00 bash
+3571684 pts/48   00:00:00 ps
 
 The vim process is no longer listed as a running process because the process was terminated by the q! option. The sshd and bash processes of both terminals are still listed as running because they are both still open.
 
 Task 5:
-The init process is the first process to run. It is invoked by the kernal at startup and executes one /etc/getty per terminal or one sshd per remote ssh connection.
+The init process is the first process to run. It is invoked by the kernel at startup and executes one /etc/getty per terminal or one sshd per remote ssh connection.
 
 Process ID for the init process is 1.
 
