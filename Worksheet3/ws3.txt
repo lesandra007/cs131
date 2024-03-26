@@ -1,0 +1,55 @@
+Task 1:
+a) Output of command to find top 3 highest monthly earners from the United States in format [Youtuber,country,highest_monthly_earnings]:
+
+	DaFuq!?Boom!,United States,9200000
+	Cocomelon - Nursery Rhymes,United States,7900000
+	ViralHog,United States,5500000
+   
+   As per the Dataset, the highest monthly earner from the United States is:
+	DaFuq!?Boom! with a highest monthly earning of 9200000
+
+b) Output of command to find top 3 highest monthly earners from the United Kingdom in format [Youtuber,country,highest_montly_earnings]:
+
+	Woody & Kleiny,United Kingdom,2000000
+	Dan Rhodes,United Kingdom,1300000
+	MoreAliA,United Kingdom,1000000
+
+   As per the Dataset, the highest monthly earner from the United Kingdom is:
+	Woody & Kleiny with a highest monthly earning of 2000000
+
+c) Output of command to find top 3 highest monthly earners from India in format [Youtuber,country,highest_monthly_earnings]:
+
+	T-Series,India,9000000
+	SET India,India,7300000
+	Zee TV,India,6800000
+
+   As per the Dataset, the highest monthly earner from India is:
+	T-Series with a highest monthly earning of 9000000
+
+Task 2:
+a) Output of command to find the highest subscribed channel from the Sports category in the format [Youtuber,number_of_subscribers,category]:
+
+	WWE,96000000,Sports
+	Dude Perfect,59500000,Sports
+	NBA,20700000,Sports
+
+   As per the Dataset, the highest subscribed channel from the Sports category is:
+	WWE with 96000000 subscribers
+
+b) Output of command to find the highest subscribed channel from the Education category in the format [Youtuber,number_of_subscribers,category]:
+
+	Cocomelon - Nursery Rhymes,162000000,Education
+	Pinkfong Baby Shark - Kids' Songs & Stories,68200000,Education
+	ChuChu TV Nursery Rhymes & Kids Songs,65900000,Education
+
+   As per the Dataset, the highest subscribed channel from the Education category is:
+	Cocomelon with 162000000 subscribers
+
+c) Output of command to find the highest subscribed channel from the Entertainment category in the format [Youtuber,number_of_subscribers,category]:
+
+	MrBeast,166000000,Entertainment
+	Vlad and Niki,98900000,Entertainment
+	Zee TV,70500000,Entertainment
+
+   As per the Dataset, the highest subscribed channel from the Entertainment category is:
+	MrBeast with 166000000 subscribers

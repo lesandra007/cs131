@@ -1,0 +1,43 @@
+  441  echo "START WKST 3"
+
+Setup:
+  442  cd cs131/
+  443  mkdir Worksheet3
+  444  ls
+  445  cd Assignment2
+  446  ls
+  447  cp 'Global YouTube Statistics.csv' ../Worksheet3
+  448  cd ..
+  449  cd Worksheet3
+  450  ls
+
+
+Task 1:
+a) 
+  451  cut -d',' -f 2,8,16 'Global YouTube Statistics.csv' | grep '^[^,]*,United States,*' | sort -k 3 -nr -t',' | head -3 > ws3.txt
+  452  vi ws3.txt 
+
+b)
+  455  cut -d',' -f 2,8,16 'Global YouTube Statistics.csv' | grep '^[^,]*,United Kingdom,*' | sort -k 3 -nr -t',' | head -3 >> ws3.txt
+  456  vi ws3.txt
+
+c)
+  457  cut -d',' -f 2,8,16 'Global YouTube Statistics.csv' | grep '^[^,]*,India,*' | sort -k 3 -nr -t',' | head -3 >> ws3.txt
+  458  vi ws3.txt
+
+
+Task 2:
+a)
+  459  cut -d',' -f 2,3,5 'Global YouTube Statistics.csv' | grep '^[^,]*,[^,]*,Sports,*' | sort -k 2 -nr -t',' | head -3 >> ws3.txt
+  460  vi ws3.txt
+
+b)
+  461  cut -d',' -f 2,3,5 'Global YouTube Statistics.csv' | grep '^[^,]*,[^,]*,Education,*' | sort -k 2 -nr -t',' | head -3 >> ws3.txt
+  462  vi ws3.txt
+
+c)
+  463  cut -d',' -f 2,3,5 'Global YouTube Statistics.csv' | grep '^[^,]*,[^,]*,Entertainment,*' | sort -k 2 -nr -t',' | head -3 >> ws3.txt
+  464  vi ws3.txt
+
+Finish:
+  465  history > cmds.log
