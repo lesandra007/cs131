@@ -1,0 +1,157 @@
+Task 1:
+
+Command(s) used to solve:
+awk '(NR!=1) && (FNR==1) { print "Number of lines in last.fake: " NR-1 }' last.fake ps.fake >> Assignment3.txt 
+awk '$1 ~ /sp24$/ {print}' last.fake >> lastsp24.fake
+awk '(NR!=1) && (FNR==1) { print "Number of lines in lastsp24.fake: " NR-1 }' lastsp24.fake ps.fake >> Assignment3.txt
+
+Output of Command:
+Number of lines in last.fake: 507
+Number of lines in lastsp24.fake: 478
+
+
+Task 2:
+
+Command(s) used to solve:
+grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }' >> Assignment3.txt
+
+Output of Command:
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+
+
+Task 3:
+
+Command(s) used to solve:
+awk '{ (match($7, ":")) ? login_time=$7: login_time=$6}; { if ( (login_time>="23:00") || (login_time<="04:00")) {print $1} }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List:" } {print} END { print "Night Owls are dope. Please ensure you get enough sleep though." }' >> Assignment3.txt
+
+
+Output of Command:
+Night Owls List:
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+ayesp24
+billysp24
+brandonsp24
+breannasp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jimmysp24
+justinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+nicolesp24
+robertosp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+
+
+Task 4:
+
+Command(s) used to solve:
+awk '{ (match($7, ":")) ? login_time=$7: login_time=$6}; { if ( (login_time>="05:00") && (login_time<="09:00")) {print $1} }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List:" } {print} END { print "Early Birds are dope. Please ensure you get enough sleep though." }' >> Assignment3.txt
+
+Output of Command:
+Early Birds List:
+aayushsp24
+ajaysp24
+ericsp24
+gradysp24
+ronsp24
+Early Birds are dope. Please ensure you get enough sleep though.
+
+
+Task 5:
+
+Command(s) used to solve:
+awk '/^t/ {print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+
+Output of Command:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+
+
+Task 6:
+
+Command(s) used to solve:
+awk -F ':'  'match($1, "^a") && ($3 % 2 == 0) {print $1}' passwd.fake >> Assignment3.txt
+
+Output of Command:
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+
+
+Task 7:
+
+Command(s) used to solve:
+sed 's/[a-zA-Z]//g; s/[0-9]//g; s/ //g' passwd.fake | sort -u >> Assignment3.txt
+
+Output of Command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://

@@ -1,0 +1,59 @@
+  888  echo "START ASSIGNMENT 3"
+
+Set Up:
+  889  cd cs131/
+  890  mkdir Assignment3
+  891  cd Assignment3
+  892  vi Assignment3.txt
+  893  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/last.fake
+  894  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/passwd.fake
+  895  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/ps.fake
+
+
+Task 1:
+1.
+  896  awk '(NR!=1) && (FNR==1) { print "Number of lines in last.fake: " NR-1 }' last.fake ps.fake >> Assignment3.txt 
+  897  vi Assignment3.txt 
+
+2.
+  898  awk '$1 ~ /sp24$/ {print}' last.fake >> lastsp24.fake
+  899  head lastsp24.fake 
+  900  vi Assignment3.txt 
+
+3.
+  901  awk '(NR!=1) && (FNR==1) { print "Number of lines in lastsp24.fake: " NR-1 }' lastsp24.fake ps.fake >> Assignment3.txt 
+  902  vi Assignment3.txt 
+
+
+Task 2:
+  903  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN { print "The list of people who worked on Sunday are:" } { print } END { print "Kudos to these people for putting in the work" }' >> Assignment3.txt
+  904  vi Assignment3.txt 
+
+
+Task 3:
+  905  awk '{ (match($7, ":")) ? login_time=$7: login_time=$6}; { if ( (login_time>="23:00") || (login_time<="04:00")) {print $1} }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Night Owls List:" } {print} END { print "Night Owls are dope. Please ensure you get enough sleep though." }' >> Assignment3.txt
+  906  vi Assignment3.txt 
+
+
+Task 4:
+  907  awk '{ (match($7, ":")) ? login_time=$7: login_time=$6}; { if ( (login_time>="05:00") && (login_time<="09:00")) {print $1} }' lastsp24.fake | sort | uniq | awk 'BEGIN { print "Early Birds List:" } {print} END { print "Early Birds are dope. Please ensure you get enough sleep though." }' >> Assignment3.txt
+  908  vi Assignment3.txt 
+
+
+Task 5:
+  909  awk '/^t/ {print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt
+  910  vi Assignment3.txt 
+
+
+Task 6:
+  911  awk -F ':'  'match($1, "^a") && ($3 % 2 == 0) {print $1}' passwd.fake >> Assignment3.txt
+  912  vi Assignment3.txt 
+
+
+Task 7:
+  913  sed 's/[a-zA-Z]//g; s/[0-9]//g; s/ //g' passwd.fake | sort -u >> Assignment3.txt
+  914  vi Assignment3.txt 
+
+
+Finish:
+  915  history > cmds.log
