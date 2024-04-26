@@ -1,0 +1,29 @@
+ 1122  echo "START WORKSHEET 5"
+
+Set up:
+ 1123  cd cs131/
+ 1124  mkdir Worksheet5
+ 1125  cd Assignment2
+ 1126  ls
+ 1127  cp 'Global YouTube Statistics.csv' ../Worksheet5
+ 1128  cd ../Worksheet5
+
+Creating script to do tasks (redirecting files and number of entries):
+ 1129  vi script.sh
+ 1130  cat script.sh 
+
+Executing script:
+ 1131  mkdir 'United States'
+ 1132  chmod u+x script.sh 
+ 1133  ./script.sh
+
+Checking work: 
+ 1134  ls
+ 1135  cd 'United States'/
+ 1136  ls
+ 1137  head "Comedy.txt" 
+ 1138  cd ..
+ 1139  vi ws5.txt
+
+Finish:
+ 1140  history > cmds.log

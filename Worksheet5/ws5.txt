@@ -1,0 +1,6 @@
+NUMBER OF ENTRIES IN ...
+
+"Worksheet5/United States/Music.txt": 73
+"Worksheet5/United States/Entertainment.txt": 68
+"Worksheet5/United States/Gaming.txt": 26
+"Worksheet5/United States/Comedy.txt": 22
